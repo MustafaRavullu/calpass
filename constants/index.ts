@@ -1,4 +1,4 @@
-import { Search, Utensils, PieChart, Cloud } from "lucide-react";
+import { Search, Utensils, PieChart, Cloud, Book } from "lucide-react";
 
 export const featureSectionInfo = [
   {
@@ -92,5 +92,20 @@ export const faqsInfo = [
     question: "How can I reset my password?",
     answer:
       "To reset your password, simply navigate to the login page and click on the 'Forgot Password' link. Follow the instructions provided, and you'll receive an email with a link to reset your password. Make sure to check your spam folder if you don't see the email in your inbox.",
+  },
+];
+
+export const navLinks = [
+  {
+    id: 1,
+    name: "Menu",
+    href: "/menu",
+    icon: Utensils,
+  },
+  {
+    id: 2,
+    name: "Cook Book",
+    href: "/cook-book",
+    icon: Book,
   },
 ];

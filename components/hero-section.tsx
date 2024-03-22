@@ -1,8 +1,9 @@
 import React from "react";
 import MaxWidthWrapper from "./max-width-wrapper";
 import { ArrowRight } from "lucide-react";
-import { buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import Link from "next/link";
+import { SignUpButton } from "@clerk/nextjs";
 
 export default function HeroSection() {
   return (
@@ -17,16 +18,11 @@ export default function HeroSection() {
           mark what you eat, and stay on top of your health goals with ease.
         </p>
         <div>
-          <Link
-            className={buttonVariants({
-              size: "lg",
-              className: "mt-5",
-            })}
-            href="/dashboard"
-            target="_blank"
-          >
-            Get started <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
+          <SignUpButton>
+            <Button variant={"default"}>
+              Get started <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </SignUpButton>
         </div>
       </MaxWidthWrapper>
     </section>
