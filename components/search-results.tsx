@@ -18,7 +18,7 @@ export default async function SearchResults({ query }: { query: string }) {
     return (
       <div className="h-full flex items-center justify-center text-muted-foreground">
         <span className="flex flex-col items-center gap-1">
-          Let's search recipes!
+          Let&apos;s search recipes!
           <UtensilsCrossed />
         </span>
       </div>
