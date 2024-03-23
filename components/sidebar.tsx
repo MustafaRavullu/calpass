@@ -40,7 +40,7 @@ function NavLink({
     <Link href={href} className="flex flex-col items-center">
       <div
         className={cn(
-          "bg-secondary/30 aspect-square p-3 rounded-md hover:bg-secondary",
+          " aspect-square p-3 rounded-md hover:bg-secondary",
           pathname === href && "bg-secondary"
         )}
       >
